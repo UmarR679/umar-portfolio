@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#f4dfb9" />
+  <meta name="description" content="Mohammed Umar — AI Engineer portfolio." />
+  <title>Mohammed Umar — AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preload" as="image" href="assets/desertbg.png" />
+  <link rel="preload" as="image" href="assets/dino.gif" />
+</head>
+<body>
+  <!-- One continuous desert world. No blur/film overlay is used. -->
+  <div class="world" aria-hidden="true">
+    <div class="world-bg"></div>
+  </div>
+
+  <header class="navbar">
+    <div class="brand">
+      <a class="logo" href="#home" aria-label="Mohammed Umar home"><span class="logo-mark" aria-hidden="true"></span>UMAR.DEV</a>
+      <div class="social-links" aria-label="Social links">
+        <a class="social-icon" href="mailto:muhammxdumxr4477@gmail.com" aria-label="Email Mohammed Umar">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"><rect x="2" y="4" width="20" height="16"/><path d="M2 5l10 8 10-8"/></svg>
+        </a>
+        <a class="social-icon" href="https://www.linkedin.com/in/mohammed-umar-2005ok/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><rect x="2" y="2" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"/><rect x="5.5" y="9.5" width="3" height="9"/><rect x="5.5" y="5.5" width="3" height="3"/><path d="M11.5 9.5h3v1.7c.6-1.1 1.9-2 3.6-2 2.8 0 3.9 1.8 3.9 4.6v5.2h-3v-4.7c0-1.2-.4-2-1.6-2-1 0-1.6.8-1.9 1.6-.1.3-.1.6-.1 1v4.1h-3V9.5z"/></svg>
+        </a>
+        <a class="social-icon" href="https://buymeacoffee.com/um9r" target="_blank" rel="noopener" aria-label="Buy me a coffee">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"><path d="M4 9h13v6a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V9z"/><path d="M17 10.5h1.2a2.3 2.3 0 0 1 0 4.6H17"/><path d="M8 3v2M11.5 3v2M15 3v2"/></svg>
+        </a>
+        <a class="social-icon" href="https://github.com/UmarR679" target="_blank" rel="noopener" aria-label="GitHub profile">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.19-3.37-1.19-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.64 1.03 2.76 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="nav-right">
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#home" data-nav="home">HOME</a>
+        <a href="#about" data-nav="about">ABOUT</a>
+        <a href="#what-i-do" data-nav="what-i-do">WHAT I DO</a>
+        <a href="#build-with" data-nav="build-with">STACK</a>
+        <a href="#my-work" data-nav="my-work">WORK</a>
+        <a href="#contact" data-nav="contact">CONTACT</a>
+      </nav>
+      <!-- RESUME BUTTON: replace the href below with your resume link.
+           Easiest options:
+           1) Drop your PDF at assets/resume.pdf (keep the filename) — the
+              href already points there and the button will download it.
+           2) Or replace href="assets/resume.pdf" with a full link (e.g. a
+              Google Drive share link or GitHub-hosted PDF URL). If you use
+              an external link, you can remove the "download" attribute so
+              it opens in a new tab instead of trying to force-download. -->
+      <a class="resume-btn" href="assets/resume.pdf" download aria-label="Download resume">
+        <span class="resume-text">RESUME</span><span class="resume-icon" aria-hidden="true">&#8595;</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+
+  <main id="site">
+    <!-- 01 HOME -->
+    <section class="chapter hero" id="home" data-chapter="home">
+      <div class="hero-inner">
+        <p class="eyebrow">HELLO! I'M</p>
+        <h1>MOHAMMED UMAR</h1>
+        <p class="hero-role">DEVELOPER & DESIGNER</p>
+      </div>
+      <div class="dino-zone hero-dino-zone"><span class="anchor" data-dino-anchor="home"></span></div>
+      <div class="hero-ground-line"></div>
+      <div class="scroll-cue"><span>SCROLL TO EXPLORE</span><b>↓</b></div>
+    </section>
+
+    <!-- 02 ABOUT -->
+    <section class="chapter about" id="about" data-chapter="about">
+      <div class="chapter-inner split about-grid">
+        <div class="dino-zone about-dino-zone"><span class="anchor" data-dino-anchor="about"></span></div>
+        <div class="about-copy reveal-on-view">
+          <p class="section-kicker">01 / ABOUT ME</p>
+          <h2>Building. Learning. Evolving.</h2>
+          <p>I'm Mohammed Umar, an Artificial Intelligence &amp; Machine Learning engineering student who enjoys turning ideas into practical technology.</p>
+          <p>I like experimenting with AI, machine learning, web development and emerging technologies while continuously learning and building new things.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 WHAT I DO: three controlled states inside one continuous page -->
+    <section class="story story-whatido" id="what-i-do" data-chapter="what-i-do">
+      <div class="sticky-scene">
+        <div class="chapter-head centered">
+          <span class="section-number">02</span>
+          <h2>WHAT I DO</h2>
+        </div>
+
+        <div class="whatido-content">
+          <div class="whatido-copy" id="skillCopy">
+            <span class="item-number" id="skillNumber">01</span>
+            <h3 id="skillTitle">CODING</h3>
+            <p id="skillDescription">Building interactive experiences with AI, machine learning, and modern web technologies. I enjoy turning ideas into practical, functional products through code.</p>
+          </div>
+
+          <div class="skill-art" id="skillArt">
+            <img id="skillImage" src="assets/coding.png" alt="Coding pixel art" />
+          </div>
+        </div>
+
+        <div class="whatido-dino-points" aria-hidden="true">
+          <span class="dino-point point-left"></span>
+          <span class="dino-point point-center"></span>
+          <span class="dino-point point-right"></span>
+        </div>
+
+        <div class="side-dots" id="skillDots" aria-hidden="true">
+          <span class="active"></span><span></span><span></span>
+        </div>
+        <div class="chapter-hint">SCROLL TO EXPLORE <b>↓</b></div>
+      </div>
+    </section>
+
+    <!-- 04 WHAT I BUILD WITH: 12 controlled technology states -->
+    <section class="story story-stack" id="build-with" data-chapter="build-with">
+      <div class="sticky-scene stack-scene">
+        <div class="chapter-head centered stack-heading">
+          <span class="section-number">04</span>
+          <h2>WHAT I BUILD WITH</h2>
+        </div>
+
+        <div class="stack-stage">
+          <div class="tech-window" id="techWindow">
+            <div class="tech-track" id="techTrack">
+              <article class="tech-item active"><div class="tech-icon"><img src="assets/python.png" alt="Python" /></div><span>Python</span></article>
+              <article class="tech-item"><div class="tech-icon"><img src="assets/java.png" alt="Java" /></div><span>Java</span></article>
+              <article class="tech-item"><div class="tech-icon"><img src="assets/javascript.png" alt="JavaScript" /></div><span>JavaScript</span></article>
+              <article class="tech-item"><div class="tech-icon"><img src="assets/html.png" alt="HTML" /></div><span>HTML</span></article>
+              <article class="tech-item"><div class="tech-icon"><img src="assets/css.png" alt="CSS" /></div><span>CSS</span></article>
+              <article class="tech-item"><div class="tech-icon"><img src="assets/react.png" alt="React" /></div><span>React</span></article>
+              <article class="tech-item"><div class="tech-icon"><img src="assets/nodejs.png" alt="Node.js" /></div><span>Node.js</span></article>
+              <article class="tech-item"><div class="tech-icon"><img src="assets/figma.png" alt="Figma" /></div><span>Figma</span></article>
+              <article class="tech-item"><div class="tech-icon"><img src="assets/flask.png" alt="Flask" /></div><span>Flask</span></article>
+              <article class="tech-item"><div class="tech-icon"><img src="assets/mysql.png" alt="MySQL" /></div><span>MySQL</span></article>
+              <article class="tech-item"><div class="tech-icon"><img src="assets/git.png" alt="Git" /></div><span>Git</span></article>
+              <article class="tech-item"><div class="tech-icon"><img src="assets/github.png" alt="GitHub" /></div><span>GitHub</span></article>
+            </div>
+          </div>
+          <div class="stack-dino-anchor" id="techDinoAnchor" aria-hidden="true"></div>
+        </div>
+
+        <div class="stack-counter"><span id="techCounter">01</span> / 12</div>
+        <div class="chapter-hint">SCROLL TO EXPLORE <b>↓</b></div>
+      </div>
+    </section>
+
+    <!-- 05 MY WORK: two project states -->
+    <section class="story story-work" id="my-work" data-chapter="my-work">
+      <div class="sticky-scene">
+        <div class="chapter-head">
+          <span class="section-number">05</span>
+          <h2>MY WORK</h2>
+        </div>
+
+        <div class="work-layout">
+          <div class="dino-zone work-dino-zone"><span class="anchor" data-dino-anchor="work"></span></div>
+          <div class="project-window" id="projectWindow">
+            <article class="project active">
+              <span class="item-number">01</span>
+              <div class="project-title-row">
+                <h3>FIXQUICK AI</h3>
+                <a class="repo-link" href="https://github.com/UmarR679/FixQuick-AI.git" target="_blank" rel="noopener" aria-label="View FixQuick AI on GitHub">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.19-3.37-1.19-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.64 1.03 2.76 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+                  <span>VIEW REPO</span>
+                </a>
+              </div>
+              <p class="project-lead">An AI-powered troubleshooting assistant designed to help users diagnose and resolve common technical problems.</p>
+              <ul>
+                <li>Analyzes user-reported issues and provides relevant troubleshooting guidance.</li>
+                <li>Uses AI to generate clear, step-by-step solutions for technical problems.</li>
+                <li>Designed with a user-friendly interface for quick and accessible problem solving.</li>
+              </ul>
+            </article>
+            <article class="project">
+              <span class="item-number">02</span>
+              <div class="project-title-row">
+                <h3>SIGNLINK</h3>
+                <a class="repo-link" href="https://github.com/UmarR679/SignLink.git" target="_blank" rel="noopener" aria-label="View SignLink on GitHub">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.19-3.37-1.19-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.64 1.03 2.76 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+                  <span>VIEW REPO</span>
+                </a>
+              </div>
+              <p class="project-lead">A computer-vision-based sign language platform that helps users learn and translate sign language through interactive features.</p>
+              <ul>
+                <li>Uses computer vision to recognize sign language gestures and convert them into text.</li>
+                <li>Includes interactive lessons and quizzes to support sign language learning.</li>
+                <li>Provides an accessible way to practice and understand commonly used signs.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+        <div class="project-counter"><span id="projectCounter">01</span> / 02</div>
+      </div>
+    </section>
+
+    <!-- 06 CURRENTLY WORKING ON -->
+    <section class="chapter current" id="currently-working" data-chapter="currently-working">
+      <div class="chapter-inner split current-grid">
+        <div class="current-copy reveal-on-view">
+          <p class="section-kicker">06 / CURRENTLY WORKING ON</p>
+          <h2>OPSPILOT</h2>
+          <p>OpsPilot is an AI-powered AIOps platform that helps teams understand operational issues faster by analyzing system logs, metrics, and incident signals — surfacing probable root causes and a clear starting point for investigation.</p>
+          <p>I'm building it as a practical exploration of AI-assisted observability, anomaly detection, and root-cause investigation.</p>
+        </div>
+        <div class="dino-zone current-dino-zone"><span class="anchor" data-dino-anchor="current"></span></div>
+      </div>
+    </section>
+
+    <!-- 07 ACHIEVEMENTS & CERTIFICATES -->
+    <section class="chapter achievements" id="achievements" data-chapter="achievements">
+      <div class="chapter-inner achievements-inner">
+        <div class="chapter-head centered">
+          <span class="section-number">07</span>
+          <h2>ACHIEVEMENTS &amp; CERTIFICATES</h2>
+        </div>
+        <div class="achievement-grid">
+          <article class="info-box">
+            <h3>🏆 ACHIEVEMENTS</h3>
+            <div class="info-list">
+              <p><strong>AGENT HACK</strong> — Participated in an 8-hour National Hackathon.</p>
+              <p><strong>HACKB25</strong> — Participated in a 12-hour Hackathon at BITM, Ballari.</p>
+            </div>
+          </article>
+          <article class="info-box">
+            <h3>📜 CERTIFICATES</h3>
+            <div class="info-list">
+              <p><a href="https://drive.google.com/file/d/1JDsEXfdRNgeK-dHQSrDmWnfgFKz1dtRn/view?usp=sharing" target="_blank" rel="noopener">Certified System Administrator</a> — ServiceNow</p>
+              <p><a href="https://drive.google.com/file/d/12VC87S-s39no36ujFjq84aygrnFwvJeA/view?usp=sharing" target="_blank" rel="noopener">AWS Certified Cloud Practitioner</a> — AWS</p>
+              <p><a href="https://drive.google.com/file/d/1__qPE9DUy8D1ic7zMRCnrnMIVtXxbKbH/view?usp=sharing" target="_blank" rel="noopener">AWS Virtual Internship</a> — SmartBridge</p>
+            </div>
+          </article>
+        </div>
+        <div class="achievement-dino-zone dino-zone"><span class="anchor" data-dino-anchor="achievements"></span></div>
+      </div>
+    </section>
+
+    <!-- 08 CONNECT -->
+    <section class="chapter contact" id="contact" data-chapter="contact">
+      <div class="chapter-inner split contact-grid">
+        <div class="dino-zone contact-dino-zone"><span class="anchor" data-dino-anchor="contact"></span></div>
+        <div class="contact-copy">
+          <p class="section-kicker">08 / CONNECT WITH ME</p>
+          <h2>LET'S BUILD<br />SOMETHING.</h2>
+          <p class="contact-message">Have an idea, project, or opportunity in mind? Let's build something meaningful together.</p>
+
+          <form id="contactForm" class="contact-form">
+            <div class="form-row">
+              <label>Name<input name="name" type="text" autocomplete="name" placeholder="YOUR NAME" required /></label>
+              <label>Email<input name="email" type="email" autocomplete="email" placeholder="YOUR EMAIL" required /></label>
+            </div>
+            <label>Subject<input name="subject" type="text" placeholder="WHAT'S THIS ABOUT?" /></label>
+            <label>Message<textarea name="message" rows="4" placeholder="TELL ME A LITTLE ABOUT IT..." required></textarea></label>
+            <button type="submit">SEND MESSAGE ↗</button>
+            <p class="form-status" id="formStatus" aria-live="polite"></p>
+          </form>
+
+          <div class="contact-links">
+            <a class="social-icon" href="mailto:muhammxdumxr4477@gmail.com" aria-label="Email Mohammed Umar">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"><rect x="2" y="4" width="20" height="16"/><path d="M2 5l10 8 10-8"/></svg>
+            </a>
+            <a class="social-icon" href="https://www.linkedin.com/in/mohammed-umar-2005ok/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><rect x="2" y="2" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"/><rect x="5.5" y="9.5" width="3" height="9"/><rect x="5.5" y="5.5" width="3" height="3"/><path d="M11.5 9.5h3v1.7c.6-1.1 1.9-2 3.6-2 2.8 0 3.9 1.8 3.9 4.6v5.2h-3v-4.7c0-1.2-.4-2-1.6-2-1 0-1.6.8-1.9 1.6-.1.3-.1.6-.1 1v4.1h-3V9.5z"/></svg>
+            </a>
+            <a class="social-icon" href="https://buymeacoffee.com/um9r" target="_blank" rel="noopener" aria-label="Buy me a coffee">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"><path d="M4 9h13v6a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V9z"/><path d="M17 10.5h1.2a2.3 2.3 0 0 1 0 4.6H17"/><path d="M8 3v2M11.5 3v2M15 3v2"/></svg>
+            </a>
+            <a class="social-icon" href="https://github.com/UmarR679" target="_blank" rel="noopener" aria-label="GitHub profile">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.19-3.37-1.19-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.64 1.03 2.76 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">© <span id="year"></span> MOHAMMED UMAR · AI ENGINEER</footer>
+    </section>
+  </main>
+
+  <img id="dino" class="dino" src="assets/dino.gif" alt="" aria-hidden="true" />
+  <script src="script.js"></script>
+</body>
+</html>
